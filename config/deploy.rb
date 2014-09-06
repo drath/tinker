@@ -18,6 +18,10 @@ set :branch, 'master'
 set :pty, true
 set :forward_agent, true
 
+
+set :linked_files, %w{config/database.yml /home/deployer/apps/tinker/shared/config/database.yml}
+
+
 # set :ssh_options, {
 #   user: 'deployer',
 #   verbose: :debug

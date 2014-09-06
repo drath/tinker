@@ -8,7 +8,7 @@ set :branch, "master"
 # need to create entries in your local Hosts file for testing.
 
 set :server_name, "www.tinker.com tinker.com"
-server 'www.tinker.com', user: 'deployer', roles: %w{web app db}, my_property: :my_value
+server '176.58.121.237', user: 'deployer', roles: %w{web app db}, my_property: :my_value
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:application)}"
 

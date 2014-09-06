@@ -1,13 +1,8 @@
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
-# server "176.58.121.237", roles: [:app, :web, :db], :primary => true
-
 set :application, 'tinker'
 set :deploy_user, 'deployer'
-# set :stages, %w(production staging)
-# set :default_stage, "production"
-
 set :deploy_via, :remote_cache
 
 set :scm, 'git'
@@ -16,7 +11,6 @@ set :branch, 'master'
 
 set :pty, true
 set :forward_agent, true
-
 
 set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{tmp/pids}

@@ -23,6 +23,7 @@ group :development do
   gem 'capistrano-bundler', '~> 1.1', require: false
   gem "capistrano-rbenv"
   gem 'hirb'
+  gem 'sqlite3'
 end
 
 group :assets do

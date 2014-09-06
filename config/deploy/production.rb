@@ -1,3 +1,21 @@
+# https://github.com/TalkingQuickly/capistrano-3-rails-template/blob/master/config/deploy/production.rb
+
+set :stage, :production
+set :branch, "master"
+
+# This is used in the Nginx VirtualHost to specify which domains
+# the app should appear on. If you don't yet have DNS setup, you'll
+# need to create entries in your local Hosts file for testing.
+
+set :server_name, "www.tinker.com tinker.com"
+server 'www.tinker.com', user: 'deployer', roles: %w{web app db}, my_property: :my_value
+
+set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:application)}"
+
+# dont try and infer something as important as environment from
+# stage name.
+set :rails_env, :production
+
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary server in each group
@@ -15,7 +33,6 @@ role :db,  %w{deployer@176.58.121.237}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server '176.58.121.237', user: 'deployer', roles: %w{web app db}, my_property: :my_value
 
 
 # Custom SSH Options

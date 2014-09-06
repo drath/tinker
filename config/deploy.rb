@@ -11,7 +11,7 @@ set :deploy_user, 'deployer'
 set :deploy_via, :remote_cache
 
 set :scm, 'git'
-set :repo_url, 'git@github.com:drath/#{fetch(:application)}.git'
+set :repo_url, "git@github.com:drath/#{fetch(:application)}.git"
 set :branch, 'master'
 
 set :pty, true

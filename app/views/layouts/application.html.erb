@@ -2,15 +2,26 @@
 <html>
 <head>
   <title>Tinker</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <!-- Google fonts. Needs to be included before bootstrap -->
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Arvo", :media => "all" %>
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Open+Sans", :media => "all" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div class="container">
+	<%= render 'layouts/header' %>
 	<%= yield %>
-</div>
+	<%= render 'layouts/footer' %>
 
 </body>
 </html>

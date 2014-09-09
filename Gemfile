@@ -16,6 +16,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 #gem 'whenever', :require => false
 gem 'figaro'
+gem 'font-awesome-rails'
 
 group :development do
 	gem 'spring'
@@ -32,7 +33,6 @@ group :assets do
 end
 
 group :test do
-  gem 'uglifier'
   gem 'capybara', '2.1.0'
   gem 'faker', '~> 1.1.2'
   gem 'database_cleaner', '~> 1.0.1'

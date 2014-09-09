@@ -1,2 +1,57 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Our goal is to inspire <br>kids to code and build cool projects<br> using the Raspberry Pi.</h1>
+    <p>For instructors, parents, do-gooders and anyone else who thinks that every kid needs to know how to code. Download easy to follow worksheets and <strong>build something</strong> with a kid today.</p>
+    <p><a class="btn btn-default btn-lg" role="button">Browse Episodes &raquo;</a></p>
+    <%= image_tag("logo.png", title: "Tinker logo", alt: "Tinker logo") %>
+  </div>
+</div>
+
+<div id="who-we-are">
+  <div class="container homepage">
+    <h2>Who we are</h2>
+    <hr>
+    <%= image_tag("who_we_are.png", alt: "Who we are", title: "Who we are", height: "160px") %>
+    <p>We are Tinkerers. We aim to impart hands-on project based education to kids so that they can become the next generation of makers.
+    </p>
+  </div>
+</div>
+
+<div id="get-involved">
+  <div class="container homepage">
+    <h2>Get Involved</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <%= fa_icon "circle", class: "fa-stack-2x" %>
+          <%= fa_icon "code", class: "fa-stack-1x fa-inverse" %>
+        </span>
+        <h3>Code</h3>
+        <p>The Raspberry Pi is a wonderful computer that's built specially for kids learning to code. With it, you can create many electronics projects both simple and complex to amaze yourself and everyone around you. </p>
+        <p><a class="btn btn-default" href="#" role="button">Why Pi? &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <i class="fa fa-child"></i>
+        <span class="fa-stack fa-4x">
+          <%= fa_icon "circle", class: "fa-stack-2x" %>
+          <%= fa_icon "smile-o", class: "fa-stack-1x fa-inverse" %>
+        </span>
+        <h3>Kids</h3>
+        <p>All Tinker lessons are built around one theme - curiosity. How does a computer really work? How can it turn on a bulb? Can it understand me when I talk to it? What else can I make it to? </p>
+        <p><a class="btn btn-default" href="#" role="button">View lessons &raquo;</a></p>
+     </div>
+      <div class="col-md-4">
+        <span class="fa-stack fa-4x">
+          <%= fa_icon "circle", class: "fa-stack-2x" %>
+          <%= fa_icon "user", class: "fa-stack-1x fa-inverse" %>
+        </span>
+        <h3>And You</h3>
+        <p>Download our simple lessons and work along with them and a kid. Each lesson is extremely visual and leads you step-by-step. Help the next generation become a generation of makers.</p>
+        <p><a class="btn btn-default" href="#" role="button">Teach &raquo;</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+

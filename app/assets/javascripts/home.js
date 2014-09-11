@@ -4,7 +4,7 @@ function smoothScroll(e, hash){
 
  // animate
  $('html, body').animate({
-   scrollTop: $(hash).offset().top
+   scrollTop: $(hash).offset().top - 50
  	}, 300, function(){
 
    // when done, add hash to url

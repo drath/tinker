@@ -20,7 +20,9 @@
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
 	<%= render 'layouts/header' %>
-	<%= yield %>
+	<div id="main">
+    <%= yield %>
+  </div>
 	<%= render 'layouts/footer' %>
 
 </body>

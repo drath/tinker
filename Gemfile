@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.0'
 #gem 'whenever', :require => false
 gem 'figaro'
 gem 'font-awesome-rails'
+gem 'haml'
 
 group :development do
 	gem 'spring'
@@ -25,6 +26,7 @@ group :development do
   gem "capistrano-rbenv"
   gem 'hirb'
   gem 'sqlite3'
+  gem 'haml-rails'
 end
 
 group :assets do

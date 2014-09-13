@@ -1,0 +1,64 @@
+// Place all the styles related to the episodes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.episodes {
+	margin-right: 200px;
+}
+
+.episodes h2 {
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.episode {
+	padding-bottom: 18px;
+	border-bottom: solid 1px #eee;
+	margin-bottom: 20px;
+}
+
+.screenshot {
+	float: left;
+}
+
+.main {
+	margin-left: 215px;
+}
+
+.info {
+	font-size: 12px;
+}
+
+.number {
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.description {
+	margin-top: 5px;
+	margin-bottom: 18px;
+	font-size: 14px;
+}
+
+.pretty_button {
+	font-size: 13px;
+	padding: 5px 10px 6px 10px;
+	font-weight: bold;
+	border: 1px solid #466a98;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: #FFF;
+	background: #386FB2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#67b0ef), to(#2b5ea4));
+	background: -moz-linear-gradient(top, #67b0ef, #2b5ea4);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67B0EF', endColorstr='#2B5EA4');
+	text-decoration: none;
+	text-shadow: 0 -1px 0 #036;
+}
+
+#main {
+	margin-top: 30px;
+	margin-left: 20px;
+}

@@ -11,6 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140911173225) do
+
+  create_table "episodes", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.text     "notes"
+    t.datetime "published_at"
+    t.integer  "position"
+    t.integer  "comments_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

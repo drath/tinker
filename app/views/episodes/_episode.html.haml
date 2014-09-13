@@ -1,15 +1,14 @@
-#episode_476.episode
+.episode[episode]
   .screenshot
-    %a{:href => "/episodes/417-foundation"}
-      %img{:alt => "Foundation", :height => "130", :src => "/assets/leds.jpg", :width => "200"}
+    = link_to image_tag("/assets/episodes/stills/#{episode.name}.png", :size => "200x125", :alt => episode.name), episode
   .main
     .info
-      %span.number Episode #417
+      %span.number Episode ##{episode.position}
       –
-      %span.published_at Jun 16, 2013
-      –
-      %span.comments
-        %a{:href => "/episodes/417-foundation?view=comments"} 64 comments
+      %span.published_at #{episode.published_at.strftime('%b %d, %Y')}
+      -# –
+      -#%span.comments
+        -#%a{:href => "/episodes/417-foundation?view=comments"} 64 comments
       %h2
         %a{:href => "/episodes/417-foundation"} 
           = episode.name

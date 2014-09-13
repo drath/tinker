@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'figaro'
 gem 'font-awesome-rails'
 gem 'haml'
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 group :development do
 	gem 'spring'

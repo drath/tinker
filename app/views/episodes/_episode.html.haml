@@ -1,6 +1,6 @@
 .episode[episode]
   .screenshot
-    = link_to image_tag("/assets/episodes/stills/#{episode.name}.png", :size => "200x125", :alt => episode.name), episode
+    = link_to image_tag(episode.still.url(:medium), :size => "200x125", :alt => episode.name), episode
   .main
     .info
       %span.number Episode ##{episode.position}
@@ -18,3 +18,4 @@
       .watch
         %a.pretty_button.read_button{:href => "/episodes/417-foundation?view=asciicast"} Read Episode
   .clear
+

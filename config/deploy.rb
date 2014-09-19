@@ -13,7 +13,7 @@ set :pty, true
 set :forward_agent, true
 
 set :linked_files, %w{config/database.yml config/secrets.yml}
-set :linked_dirs, %w{tmp/pids}
+set :linked_dirs, %w{tmp/pids public/system}
 
 namespace :deploy do
 

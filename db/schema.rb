@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140913190516) do
+ActiveRecord::Schema.define(version: 20140919155502) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -59,6 +59,10 @@ ActiveRecord::Schema.define(version: 20140913190516) do
     t.string   "still_content_type"
     t.integer  "still_file_size"
     t.datetime "still_updated_at"
+    t.string   "lesson_file_name"
+    t.string   "lesson_content_type"
+    t.integer  "lesson_file_size"
+    t.datetime "lesson_updated_at"
   end
 
 end

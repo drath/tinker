@@ -14,7 +14,7 @@ ActiveAdmin.register Episode do
   #   permitted
   # end
 
-  permit_params :name, :description, :notes, :published_at, :position, :still
+  permit_params :name, :description, :notes, :published_at, :position, :still, :lesson
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
@@ -24,6 +24,7 @@ ActiveAdmin.register Episode do
       f.input :published_at
       f.input :position
       f.input :still, :as => :file, :hint => f.template.image_tag(f.object.still.url(:medium))
+      f.input :lesson, :as => :file
     end
     f.actions
  end

@@ -10,11 +10,11 @@
       -#%span.comments
         -#%a{:href => "/episodes/417-foundation?view=comments"} 64 comments
       %h2
-        %a{:href => "/episodes/417-foundation"} 
+        %a{:href => "/episodes/#{episode.id}"} 
           = episode.name
       .description
         = episode.description
-        %span.stats (11 minutes)
+        %span.stats 
       .watch
         %a.pretty_button.read_button{:href => "/episodes/417-foundation?view=asciicast"} Read Episode
   .clear

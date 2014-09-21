@@ -60,3 +60,9 @@ font-weight: bold;
 	padding-top: 20px;
 	padding-left: 20px;
 }
+
+/* The iframe tag for the YouTube link surrounds itself with a pre tag mysteriously. Trying to remove it visually */
+.episode_content pre {
+	background-color: white;
+	border: none;
+}

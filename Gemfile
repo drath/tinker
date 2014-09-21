@@ -4,7 +4,8 @@ gem 'rails', '4.1.4'
 gem 'bcrypt', '~> 3.1.7'
 gem 'unicorn'
 gem 'mysql2'
-gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+#gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
+gem "paperclip", "~> 3.5.3"
 gem 'multi_json'
 gem 'simple_form'
 gem 'best_in_place'
@@ -20,6 +21,8 @@ gem 'font-awesome-rails'
 gem 'haml'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'redcarpet', '~> 3.0.0'
+gem 'pygments.rb'
 
 group :development do
 	gem 'spring'

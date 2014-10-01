@@ -5,3 +5,6 @@ body {
   font-family: 'Arvo', courier, serif;
   font-size: 18px;
 }
+
+/* http://stackoverflow.com/questions/3936697/html-position-an-image-in-a-new-line */
+img { display:block; }  

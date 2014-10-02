@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 ul.nav, .jumbotron h1 {
-	font-family: 'Arvo', courier, serif;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 ul.nav {
@@ -45,7 +45,7 @@ ul.nav {
 
 .homepage h2, .homepage h3 {
 	color: #e74c3c;
-	font-family: 'Arvo', courier, serif;
+	font-family: 'Droid Sans', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -78,6 +78,11 @@ ul.nav {
 	margin-top: 15px;
 }
 
+.homepage img {
+	margin-right: auto;
+  margin-left: auto;
+}
+
 footer {
 	background-color: #e74c3c;
 	padding-top: 5px;
@@ -98,6 +103,11 @@ footer p {
   padding-top: 12px;
   font-weight: bold;
   line-height: 1;
+}
+
+#rootsandwings {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #logo:hover {

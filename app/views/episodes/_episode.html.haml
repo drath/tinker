@@ -28,7 +28,7 @@
       = image_tag(episode.still.url(:medium), :alt => episode.name)
   .col-md-5
     %h3 #{episode.name}
-    %h4 Subheading
+    %h4 #{episode.notes}
     %p #{episode.description}
     / %a.btn.btn-primary{:href => "#"}
     /   View Project

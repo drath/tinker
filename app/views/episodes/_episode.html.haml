@@ -1,21 +1,37 @@
-.episode[episode]
-  .screenshot
-    = link_to image_tag(episode.still.url(:medium), :size => "200x125", :alt => episode.name), episode
-  .main
-    .info
-      %span.number Episode ##{episode.position}
-      –
-      %span.published_at #{episode.published_at.strftime('%b %d, %Y')}
-      -# –
-      -#%span.comments
-        -#%a{:href => "/episodes/417-foundation?view=comments"} 64 comments
-      %h2
-        %a{:href => "/episodes/#{episode.id}"} 
-          = episode.name
-      .description
-        = episode.description
-        %span.stats 
-      .watch
-        %a.pretty_button.read_button{:href => "/episodes/#{episode.id}"} Read Episode
-  .clear
+/ .episode[episode]
+/   .screenshot
+/     = link_to image_tag(episode.still.url(:medium), :size => "200x125", :alt => episode.name), episode
+/   .main
+/     .info
+/       %span.number Episode ##{episode.position}
+/       –
+/       %span.published_at #{episode.published_at.strftime('%b %d, %Y')}
+/       -# –
+/       -#%span.comments
+/         -#%a{:href => "/episodes/417-foundation?view=comments"} 64 comments
+/       %h2
+/         %a{:href => "/episodes/#{episode.id}"} 
+/           = episode.name
+/       .description
+/         = episode.description
+/         %span.stats 
+/       .watch
+/         %a.pretty_button.read_button{:href => "/episodes/#{episode.id}"} Read Episode
+/   .clear
 
+/ Episode
+/ Project One
+.row
+  .col-md-7
+    %a{:href => "#"}
+      / %img.img-responsive{:alt => "", :src => "http://placehold.it/700x300"}
+      = image_tag(episode.still.url(:medium), :alt => episode.name)
+  .col-md-5
+    %h3 #{episode.name}
+    %h4 Subheading
+    %p #{episode.description}
+    / %a.btn.btn-primary{:href => "#"}
+    /   View Project
+    /   %span.glyphicon.glyphicon-chevron-right
+%hr
+/ /.row

@@ -11,10 +11,15 @@ body {
 /* http://stackoverflow.com/questions/3936697/html-position-an-image-in-a-new-line */
 img { display:block; }  
 
-.painting {
-	height: 580px;
-}
+// .painting {
+// 	height: 580px;
+// }
 
 .panel-default {
 	overflow: hidden;
+}
+
+.info {
+	padding-left: 10px;
+	text-align: center;
 }

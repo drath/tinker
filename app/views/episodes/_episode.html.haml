@@ -21,17 +21,19 @@
 
 / Episode
 / Project One
-.row
-  .col-md-7
-    %a{:href => "#"}
-      / %img.img-responsive{:alt => "", :src => "http://placehold.it/700x300"}
-      = image_tag(episode.still.url(:medium), :alt => episode.name)
-  .col-md-5
-    %h3 #{episode.name}
-    %h4 #{episode.notes}
-    %p #{episode.description}
-    / %a.btn.btn-primary{:href => "#"}
-    /   View Project
-    /   %span.glyphicon.glyphicon-chevron-right
-%hr
+.panel.panel-default.painting
+  .row
+    .col-md-7
+      %div{:style => "background: url(\"#{episode.still.url(:medium)}\") no-repeat center center; height: 580px;"}
+      %a{:href => "#"}
+        / %img.img-responsive{:alt => "", :src => "http://placehold.it/700x300"}
+        / = image_tag(episode.still.url(:medium), :alt => episode.name)
+    .col-md-5
+      .painting
+        %h3 #{episode.name}
+        %h4 #{episode.notes}
+        %p #{episode.description}
+      / %a.btn.btn-primary{:href => "#"}
+      /   View Project
+      /   %span.glyphicon.glyphicon-chevron-right
 / /.row

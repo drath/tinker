@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
-set :application, 'wideeyekids'
+set :application, 'tinker'
 set :deploy_user, 'deployer'
 set :deploy_via, :remote_cache
 

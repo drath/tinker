@@ -88,9 +88,11 @@
   margin-bottom: 2em;
   padding: 15.5em 0em;
   border-bottom: 0px solid #e5e5e5;
-  background-size: cover;
-  background-position: right top;
+  background-size: contain; /* was cover */
+  background-position: center top;
   background-repeat: no-repeat;
+  background-image: url(asset-path("animal-soundsss-cover.jpg"));
+  border: 10px solid gray;
 }
 .episode-section#intro-message header h1 {
   margin: 0 0 0;
@@ -104,10 +106,10 @@
   margin-bottom: 2.244em;
 }
 
-#intro-message.episode-section { 
-  background-image: url(asset-path("AS_hero_01.jpg"));
-	border: 1px solid gray;
-}
+// #intro-message.episode-section { 
+//   background-image: url(asset-path("animal-soundsss-cover.jpg"));
+// 	border: 1px solid gray;
+// }
 
 .carousel-inner > .item > img {
   margin: auto;

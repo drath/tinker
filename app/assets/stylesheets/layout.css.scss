@@ -1,0 +1,45 @@
+html, body {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+/* http://stackoverflow.com/questions/3936697/html-position-an-image-in-a-new-line */
+img { display:block; } 
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+p, li {
+  font-size: 18px;
+}
+
+ul.nav {
+	font-weight: bold;
+}
+
+footer {
+	background-color: #e74c3c;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+footer p {
+	color: white;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 12px;
+  font-weight: bold;
+  line-height: 1;
+}

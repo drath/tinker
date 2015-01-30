@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'info/about'
+
+  get 'info/license'
+
+  get 'info/privacy'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :episodes

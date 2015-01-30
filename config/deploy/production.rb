@@ -7,7 +7,7 @@ set :branch, "master"
 # the app should appear on. If you don't yet have DNS setup, you'll
 # need to create entries in your local Hosts file for testing.
 
-set :server_name, "www.tinker.com tinker.com"
+set :server_name, "www.wideeyekids.com wideeyekids.com"
 server '176.58.121.237', user: 'deployer', roles: %w{web app db}, my_property: :my_value
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:application)}"

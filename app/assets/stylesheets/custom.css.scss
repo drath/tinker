@@ -1,25 +1,51 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 20px;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 21px;
-  font-weight: normal;
-  line-height: 28px;
 }
+
+p, li {
+  font-size: 18px;
+}
+
 
 /* http://stackoverflow.com/questions/3936697/html-position-an-image-in-a-new-line */
 img { display:block; }  
 
-// .painting {
-// 	height: 580px;
-// }
 
-.panel-default {
-	overflow: hidden;
+/* From http://charliepark.org/bootstrap_buttons/ - Because default bootstrap buttons are a dead giveaway */
+.btn-custom {
+  background-color: hsl(0, 0%, 14%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#424242", endColorstr="#232323");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#424242), to(#232323));
+  background-image: -moz-linear-gradient(top, #424242, #232323);
+  background-image: -ms-linear-gradient(top, #424242, #232323);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #424242), color-stop(100%, #232323));
+  background-image: -webkit-linear-gradient(top, #424242, #232323);
+  background-image: -o-linear-gradient(top, #424242, #232323);
+  background-image: linear-gradient(#424242, #232323);
+  border-color: #232323 #232323 hsl(0, 0%, 11%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
+  -webkit-font-smoothing: antialiased;
 }
 
-.info {
-	padding-left: 10px;
-	text-align: center;
+/* From http://stackoverflow.com/questions/20746461/how-do-you-remove-the-default-bootstrap-3-carousel-control-background-gradients */
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+/* Set the arrow controls on the carousel */
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  color: lightslategray;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  color: lightslategray;
+}
+
+.carousel-inner {
+  padding-top: 5px;
 }

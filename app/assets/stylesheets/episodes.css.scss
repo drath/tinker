@@ -2,67 +2,110 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.episodes {
-	padding-top: 20px;
-	margin-right: 200px;
-}
+// .episodes {
+// 	padding-top: 20px;
+// 	margin-right: 200px;
+// }
 
-.episodes h2 {
-	margin-top: 5px;
-	margin-bottom: 0px;
-}
+// .episodes h2 {
+// 	margin-top: 5px;
+// 	margin-bottom: 0px;
+// }
 
-.episode {
-	padding-bottom: 45px;
-	border-bottom: solid 1px #eee;
-	margin-bottom: 20px;
-}
+// .episode {
+// 	padding-bottom: 45px;
+// 	border-bottom: solid 1px #eee;
+// 	margin-bottom: 20px;
+// }
 
-.screenshot {
-	float: left;
-}
+// .screenshot {
+// 	float: left;
+// }
 
-.main {
-	margin-left: 215px;
-}
+// .main {
+// 	margin-left: 215px;
+// }
 
-.info {
-}
+// .info {
+// }
 
-.number {
-text-transform: uppercase;
-font-weight: bold;
-}
+// .number {
+// text-transform: uppercase;
+// font-weight: bold;
+// }
 
-.description {
-	margin-top: 5px;
-	margin-bottom: 18px;
-}
+// .description {
+// 	margin-top: 5px;
+// 	margin-bottom: 18px;
+// }
 
-.pretty_button {
-	font-size: 13px;
-	padding: 5px 10px 6px 10px;
-	font-weight: bold;
-	border: 1px solid #466a98;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	color: #FFF;
-	background: #386FB2;
-	background: -webkit-gradient(linear, left top, left bottom, from(#67b0ef), to(#2b5ea4));
-	background: -moz-linear-gradient(top, #67b0ef, #2b5ea4);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67B0EF', endColorstr='#2B5EA4');
-	text-decoration: none;
-	text-shadow: 0 -1px 0 #036;
-}
+// .pretty_button {
+// 	font-size: 24px;
+// 	padding: 5px 10px 6px 10px;
+// 	font-weight: bold;
+// 	border: 1px solid #466a98;
+// 	border-radius: 4px;
+// 	-webkit-border-radius: 4px;
+// 	-moz-border-radius: 4px;
+// 	color: #FFF;
+// 	background: #386FB2;
+// 	background: -webkit-gradient(linear, left top, left bottom, from(#67b0ef), to(#2b5ea4));
+// 	background: -moz-linear-gradient(top, #67b0ef, #2b5ea4);
+// 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67B0EF', endColorstr='#2B5EA4');
+// 	text-decoration: none;
+// 	text-shadow: 0 -1px 0 #036;
+// }
 
-.episode_content {
-	padding-top: 20px;
-	padding-left: 20px;
-}
+// .episode_content {
+// 	padding-top: 20px;
+// 	padding-left: 20px;
+// }
 
 /* The iframe tag for the YouTube link surrounds itself with a pre tag mysteriously. Trying to remove it visually */
-.episode_content pre {
-	background-color: white;
-	border: none;
+// .episode_content pre {
+// 	background-color: white;
+// 	border: none;
+// }
+
+/* From Benji */
+
+.episode-section > header {
+  text-align: right;
+  padding-right: 100px;
 }
+.episode-section > header h1 {
+  margin: 2em 0 2.631em;
+  padding: 0 1em .53em;
+  font-size: 1.146em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 0px solid #e5e5e5;
+/* to change "latest blog posts" header "inline-block" switches back on */ 
+  display: none;
+}
+.episode-section#intro-message {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  padding: 15.5em 0em;
+  border-bottom: 0px solid #e5e5e5;
+  background-size: cover;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.episode-section#intro-message header h1 {
+  margin: 0 0 0;
+  padding: 0;
+  text-transform: none;
+  font-size: 3.631em;
+  border: none;
+  color: #000000;
+}
+.episode-section#intro-message p {
+  margin-bottom: 2.244em;
+}
+
+#intro-message.episode-section { 
+	background-image: url(AS_hero_01.jpg); 
+	border: 1px solid gray;
+}
+

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'photo/new'
+
   get 'info/about'
 
   get 'info/license'

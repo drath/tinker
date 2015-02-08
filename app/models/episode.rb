@@ -5,5 +5,6 @@ class Episode < ActiveRecord::Base
 
   validates_attachment_content_type :lesson, :content_type => [ 'text/x-markdown']
 
-
+  has_many :photos
+  accepts_nested_attributes_for :photos
 end

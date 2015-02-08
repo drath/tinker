@@ -10,6 +10,11 @@ class EpisodesController < ApplicationController
 		Episode.create(episode_params)
 	end
 
+	def update
+		logger.debug "INSIDE EDIT EPISODE FUNCTION"
+		Episode.update(episode_params)
+	end
+
 	def show
 		@episode = Episode.find(params[:id])
 		#@markdown = File.read("public" + @episode.lesson.url(:original, timestamp: false))
@@ -20,6 +25,6 @@ class EpisodesController < ApplicationController
 	private
 
 		def episode_params
-			params.require(:episode).permit(:name, :description, :notes, :published_at, :position, :still, :body, :content_url)
+			params.require(:episode).permit(:photos_attributes, :name, :description, :notes, :published_at, :position, :still, :body, :content_url)
 		end
 end

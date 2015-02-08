@@ -14,7 +14,7 @@ ActiveAdmin.register Episode do
   #   permitted
   # end
 
-  permit_params :name, :description, :notes, :publisshed_at, :position, :still, :lesson, :content_url
+  permit_params :name, :description, :notes, :publisshed_at, :position, :still, :lesson, :content_url, :photos_attributes
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
@@ -27,6 +27,15 @@ ActiveAdmin.register Episode do
       f.input :lesson, :as => :file
       f.input :content_url
     end
+
+    f.inputs do
+      f.has_many :photos, heading: 'Photos', allow_destroy: true, new_record: true do |a|
+        a.input :image, :as => :file, :hint => a.template.image_tag(a.object.image.url(:medium))
+        a.actions
+      end
+    end
+
+
     f.actions
  end
 

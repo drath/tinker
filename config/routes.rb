@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'animals/index'
+
+  get 'animals/show'
+
   get 'photo/new'
 
   get 'info/about'

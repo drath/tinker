@@ -14,13 +14,14 @@ ActiveAdmin.register Wideeye do
   #   permitted
   # end
 
-  permit_params :title, :description, :picture
+  permit_params :title, :description, :picture, :created_at
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
       f.input :title
       f.input :description
       f.input :picture, :as => :file, :hint => f.template.image_tag(f.object.picture.url(:medium))
+      f.input :created_at
     end
     f.actions
  end

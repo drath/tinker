@@ -33,6 +33,11 @@ ul.rig li p {
 	font-size: 1.5em;
 	line-height: 1.5em;
 }
+ul.rig li a {
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
 /* class for 2 columns */
 ul.rig.columns-2 li {
 	width: 47.5%; /* this value + 2.5 should = 50% */
@@ -45,6 +50,7 @@ ul.rig.columns-3 li {
 ul.rig.columns-4 li {
 	width: 22.5%; /* this value + 2.5 should = 25% */
 }
+
  
 @media (max-width: 480px) {
 	ul.grid-nav li {

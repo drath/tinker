@@ -14,13 +14,14 @@ ActiveAdmin.register Book do
   #   permitted
   # end
 
-  permit_params :title, :author, :review, :summary, :cover
+  permit_params :title, :author, :review, :summary, :buy_url, :cover
 
   form :html => { :enctype => "multipart/form-data" } do |f|
     f.inputs "Details" do
       f.input :title
       f.input :summary, :as => :text
       f.input :author
+      f.input :buy_url
       f.input :cover, :as => :file, :hint => f.template.image_tag(f.object.cover.url(:medium))
     end
 

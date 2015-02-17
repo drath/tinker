@@ -1,0 +1,18 @@
+/ .bs-example
+/ 	.panel.panel-default
+/ 		.panel-body 
+/ 			.col-md-4
+/ 				%strong.wideeye #{book.title}
+/ 				%p.wideeye #{book.review}
+/ 			.col-md-8
+/ 				%img.img-responsive{:src => "#{book.cover.url(:medium)}", :class => "wideeye_box"}
+/ 		.clearfix
+/ 			.col-md-12
+/ 				.pull-right
+/ 					%small #{book.created_at.strftime("%d %b. %Y") }
+
+%li
+	%img{:src => "#{book.cover.url(:medium)}"}/
+	%h3 #{book.title}
+	%p #{book.summary}
+	%p <b> #{book.author} </b>

@@ -21,16 +21,19 @@
 /       /       Buy
 /       %p
 
-.bs-example
-	.panel.panel-default
-		.panel-body 
-			.col-md-4
-				%strong.wideeye #{wideeye.title}
-				%p.wideeye #{wideeye.description}
-			.col-md-8
-				%img.img-responsive{:src => "#{wideeye.picture.url(:medium)}", :class => "wideeye_box"}
-		.clearfix
-			.col-md-12
-				.pull-right
-					-# %a.btn.btn-primary{:href => "#"} Learn More
-					%small #{wideeye.created_at.strftime("%d %b. %Y") }
+/ .bs-example
+/ 	.panel.panel-default
+/ 		.panel-body 
+/ 			.col-md-4
+/ 				%strong.wideeye #{wideeye.title}
+/ 				%p.wideeye #{wideeye.description}
+/ 			.col-md-8
+/ 				%img.img-responsive{:src => "#{wideeye.picture.url(:medium)}", :class => "wideeye_box"}
+/ 		.clearfix
+/ 			.col-md-12
+/ 				.pull-right
+/ 					-# %a.btn.btn-primary{:href => "#"} Learn More
+/ 					%small #{wideeye.created_at.strftime("%d %b. %Y") }
+
+%li
+	%img{:src => "#{wideeye.picture.url(:medium)}"}/

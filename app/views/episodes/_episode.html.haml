@@ -1,72 +1,14 @@
 / Episode
 / Project One
 
-/%section#intro-message.episode-section
-=image_tag  (episode.still.url)
-%header.text-center
-  %h1
-  %p
-  %a.btn.btn-custom{:href => "https://itunes.apple.com/us/app/my-animal-soundsss/id954165347?mt=8", :role => "button"} Order #{episode.name}
+%section#intro-message.episode-section
+  =image_tag  (episode.still.url)
+  %header.text-center
+    %h1
+    %p
+    %a.btn.btn-custom{:href => "https://itunes.apple.com/us/app/my-animal-soundsss/id954165347?mt=8", :role => "button"} Order #{episode.name}
 
-%ul.nav.nav-tabs
-  %li.active
-    %a{"data-toggle" => "tab", :href => "#about"} About
-  %li
-    %a{"data-toggle" => "tab", :href => "#gallery"} Gallery
-#myTabContent.tab-content
-  #about.tab-pane.fade.active.in
-    %p #{markdown(episode.description)}
-  #gallery.tab-pane.fade
-    .panel.panel-default.painting
-      .row
-        .col-md-12
-          #myCarousel.carousel.slide{"data-ride" => "carousel", "data-interval" => 5000}
-            / Indicators are the small radio buttons underneath the caption which are filled in when they’re active.
-            %ol.carousel-indicators
-              %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "3", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "4", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "5", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "6", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "7", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "8", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "9", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "10", "data-target" => "#myCarousel"}
-              %li{"data-slide-to" => "11", "data-target" => "#myCarousel"}
-            / Wrapper for slides
-            .carousel-inner
-              .item.active
-                %img{:alt => "...", :src => "#{asset_path('cow.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('cat.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('crab.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('crow.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('racoon.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('frog.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('hyena.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('mosquito.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('ladybird.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('owl.jpg')}"}/
-              .item
-                %img{:alt => "...", :src => "#{asset_path('creativewazoo.jpg')}"}/
-
-            / Left and right controls
-            %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel", :role => "button"}
-              %span.glyphicon.glyphicon-chevron-left
-            %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel", :role => "button"}
-              %span.glyphicon.glyphicon-chevron-right
-
-
-
-
-
+  #myTabContent.tab-content
+    #about.tab-pane.fade.active.in
+      %p #{markdown(episode.description)}
+      %hr
